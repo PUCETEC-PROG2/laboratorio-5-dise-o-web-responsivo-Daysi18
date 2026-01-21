@@ -1,0 +1,113 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 54px;
+}
+
+.pokemon-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    padding: 16px;
+}
+
+.pokemon-card {
+    background-color: #ffe9f9c5;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(243, 67, 199, 0.74);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex: calc(33.333% - 32px);
+    max-width: calc(33.333% - 32px);
+    min-width: 300px;
+}
+
+.pokemon-image {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    background: linear-gradient(135deg, #ffceeb 0%, #f7e8f5 50%);
+    background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEhMVFRUVFRUVFRUVEBUVFRcVFRUWFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0dHR4rLSstLS0tLS0rLS0rLS0tLS0tLS0tKy0tLS0rLS0tLS4tLS0uLS0tLSstLS0tLS0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAAAgMEAQUGB//EAC8QAAICAQIEAwcFAQEAAAAAAAABAgMRBCESMUFRYYGREyJxobHB8AUyQlLRFOH/xAAZAQEAAwEBAAAAAAAAAAAAAAAAAQIDBAX/xAAjEQEBAAMBAAIBBAMAAAAAAAAAAQIDESESMUEEE1FhInGB/9oADAMBAAIRAxEAPwD9xAAA5GWSEpEoASAAAAAACLYEgQx4kkwOgAAAAAAAHIyzuQlInHkB0AAAAAAItgSBAkmB0AACuUickRjEBGJMAAAAAAAEF9yZxoCJJIJHQBxs6VzkEydTTOlMZEnInieJ5ISlkhN5O1jiOLIxJHEzpCAAAAAAIRJnGgIkkgkdAAAAAAABxgBkg5EeIlbi1M6U8RZGQ4ixybORkdsMrswyZOrY49jZkcRTCzJxzKo+K7iM18yTmZNTMmNdeHq6FhY5nn12lk7S0jS6/WnjLYSPPjaaaplrFcsONsSRXWyXEZOepAAIAAAAAAAAAAAAAAiyRCQTFc2VuRZJGeZLXGJqZJWGZzIe0JjT4db/AGmTJfFiqWS9rJM8qsnxqiqZOUiLR2e6Fi151FzMessO+03aMevsIjo1a/8AJOu0nO48/T2Z6rvv4dCU7TXGOm6vW+uw20SPJpl16HoUT2yRmw24N7twi2l9zzKrOJ56G2FhlxyZ6+eNiZ0phItTIc9nHQAEAAAAAAAAABGTAkcaI4+J3iAhJFFkTQ5FNjLRrjWG0yTswbromC9E8durlb9HLKNHEeTpLsNpPPjjB6MZpomMtuHK7YyNdhXZMzO/p5ljHDqrUyxMya006qaeJ4zzT+P5go1Syild2v8ADz6eZLfJOuG3jvnt4BRNMb46rVtU90jXO/dQ9cdjFB4Wer5EqU1v1ZW+sc8ZfXp1zxsi+u08xTxzLK7ieObLX17VUzXBnl6aRvrkZVw7MONCOkIs65IhhxIHEzrCBs5F53ISlknFbAdAAAiiRxoCLOSRLBCTJiYotMtlzRqsZjujzLyOrXz8qZ6gqk0+3ruVXxMqm0yeO3DXLPGyaxyEdUZZ3B3J7scWuu37bP8ApU84/cunc8u+957CC34k9zd7JWrPKa5r+y7rxK9WxmOq/wBO6ZcUWu6yviuZyyPuktCsPh8crP0ZpnVzXTn5MW99Z5Zcyecql0zjxIyr6fmDcqimdfz+glXmxk4cvPRcicZY97bGMb/bxNDqSWXsundmSyLk/Dt0Ly8XlmTk7OLdrbos/NmvSVlUalHd7FtN+dorza2IuSMr549OrYuWqXJbvwMFVLf7pZ8FyN9EUuSKODZMZ9+rq+J89jTCCRVBl0WQ5c7UmVyeSUlkQiQzIxJAAAAAAAHJFMy5lckTFsWO6Riut8D0bYmO2s1ldeqx5tt6MtliPQtqMN1S/qvT/DScehruLPZbvt9clMotljphn9vpJourqh3mvR/4Vyjp7MYrqyjdRL17nKqY/wB/WHXyZorp8U/hn7oxsc2zOVpa4sS/l18f/TXKGUn5P8/OZRp4m+mHzIedsy4xTqIOpJZe/Zf74HpTrMV65jphn1gui5PL9F9kUuL6bfUvtnjkYLrGS7dctWKEU9933bJf9STx9zy7ZsobZaR1TR37r6CGtRor1p89Tk30wfMn4sdn6fCPar1Jor1B5VMTbUiPi4dmvGN8bS2MzLBF0Stjlyxi7J0rRNEM7HQAQgAAAjIkcaAzWsxXTZ6Uq0Z50otK6NecjyNRY3yXkjDOUs8s+G5706olFmF0Rb5O3Xuk+o+d9nY3smaaf0+19MeL2Rut1TXLb4bGazVti11fubMp5JFleha/dOK+G/0NEYRXJt+WEYFY2WQsK1nljlfuvVpkbqpnmaZcjTO7tyWxHHDsw7eNllmxhumShdvh8nsZ9Sms+H35EI14cvFM7Y9VnzaM8nW87SWFl4aexO7heye5h1VMo80Xjv14y/nlTshW/wCb84lMtPHpKLMs5EYyNcXZjrs/L0aqPg/gzXVA8+k21ZL8c+yVtrNdZjrfLfP5yNVbK2OHNpTLIsoiWxM7HNlF0WWIqiWIzrGpAAhUAAAjGWSMpZJQQHZFE0XsrmgtjWO/Y869s9S2BjugWjs1ZceVfFvn05GabUeZp12oS5HlqmU3n0X3LyPU1TuPb5FntnJ4R6Olr4dyqjTcPT6fU1Vxy8dEsvyIU2Zy+T6aXdwrL/dL6dzlssQj3bz5IwO7jlnpyRb+pW+8o/1WBYw/a9k/6nK3bJfbLign1XzXc8+qWU0S0tmFxdFtJeDIk6tdfn+narUpJ4ybqLPat5j7nLD6vq12PL1LcJZT8Uz1v0mxSh4rmJ54runMflENT+hwazFvzPHWiksrHy38j6pMrnWm89S8yY6v1ec8t7HgVado11VfL82PQ/5x7Et8l8t/yUVwNMIiNZbGI6wyz6RRakRjEklkpaxyqyJcimMS6LM6xydABCoVylkm0cjEBGJIAARkiRCyeAmKLdjydZY3yN92WVrSdy08deqzD2vEWjb3ZfCjD2PUdS/wrdRa5Om77kx27LL354Rg1dvDHC5s9KyHU8myPFNvospfHuTi20SW9qzQr3l4GfV3Zk367l1O0ZPyMEy+U8dWGMuVrdo5dy7SyxZKHSaa9eTMmlNGpi8xl5GU8Uzntn8ovLi4P90H8iH6fY4yym0X66HvRsXXn8UTrh72e+5fPH8qW9x/qvZpsbRNLBVQaooq8zLkShuS4CPBgurkRaxyv8K+A7wlziccR1X5K1EQRPhO8JHUWkUTSEUdKqAAAAAAAAOSKpRyXAJl4rjWjkolpxoJ6yygVSga5RKrIktMcnla+WFhc+RgdOFg9GyHFLPRfUqnWa4vQ15fGcYrYe7gySqPUtrKZVFsr43w2cU6es22U5h8xTUbq68rBkx2bfesMa+KGPMq00f4m+irHqV2U4eTTG9is2fcW0s2VsyVxNFbM7459nrXAShghBl0WQ5r4jCRaRcTqKqUwMHQEAAAAAAAAAAAAAAAAOYKNTyNBVKOWTFsb6x+ywil1m+UStwNJW8zYJVEfYm91nPZC1pNrNCs11QOxrL4QM/wyz2dZXXiXxE6jVZA7KJMqv7jFGss4C1wOqJNvU3NXFF8CKiWRRVnlUkACFAAAAAAAAAAi2BIEOElFgdAAAAADmDpxsCEkQgsk5PJKKJ6nqCid4CeDo6dQUSSR0EI6M4dIN5AlgYI8PqSiwGDoAAAAACMpYATl6nUVpZLQAAAESRxoCJJIJHQAAAAAA2VuWSbRyMQEYkgAAAAAAARRI40BHBJIJHQAAAAACMpYILcslHISAJHQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//Z);
+}
+
+.pokemon-info {
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pokemon-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.pokemon-type {
+    padding: 8px 16px;
+    border-radius: 20px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+
+
+.type-electric {
+    background: linear-gradient(135deg, #ffeb36 0%, #ffffff 70%)
+}
+
+.type-fire {
+    background: linear-gradient(135deg, #ff7f36 0%, #ffffff 70%)
+}
+
+.type-water {
+    background: linear-gradient(135deg, #1ba6f7 0%, #ffffff 70%)
+}
+
+.type-ghost {
+    background: linear-gradient(135deg, #f74e1b 0%, #ffffff 70%)
+}
+
+.type-normal {
+    background: linear-gradient(135deg, #1bf0f7 0%, #ffffff 70%)
+}
+
+.type-psychic {
+    background: linear-gradient(135deg, #1bf7b5 0%, hsl(0, 0%, 100%) 70%)
+}
+
+.type-grass {
+    background: linear-gradient(135deg, #1bf738 0%, #ffffff 70%)
+}
+
+@media screen and (max-width: 768px) {
+    .pokemon-grid {
+        gap: 12px;
+    }
+
+    .pokemon-card {
+        flex: calc(50% - 16px);
+        max-width: calc(50% - 16px);
+    }
+}
+
+.pokemon-card :hover{
+ transform: translate(-8px);
+ box-shadow: 0 8px 16px rgba(0, 0g, 0, 0.4) ;
+ transition: all 0.3s ease;
+}
+
+.pokemon-image{
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+  
+}
