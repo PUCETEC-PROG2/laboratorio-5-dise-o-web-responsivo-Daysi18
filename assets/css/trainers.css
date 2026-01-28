@@ -19,7 +19,7 @@
     background: linear-gradient(145deg, #ffe9f9 0%, #fff0fb 100%);
     border-radius: 24px;
     box-shadow:
-        0 6px 20px rgba(255, 182, 193, 0.15),
+        0 6px 20px rgba(121, 80, 86, 0.15),
         inset 0 1px 0 rgba(255, 255, 255, 0.6);
     overflow: hidden;
     display: flex;
@@ -36,7 +36,7 @@
 .trainer-card:hover {
     transform: translateY(-8px);
     box-shadow:
-        0 15px 30px rgba(255, 182, 193, 0.25),
+        0 15px 30px rgba(83, 82, 82, 0.25),
         0 5px 15px rgba(255, 182, 193, 0.15);
     border-color: rgba(255, 182, 193, 0.6);
 }
@@ -126,14 +126,12 @@
     gap: 8px;
 }
 
-
 .team-pokemon {
     display: flex;
     justify-content: center;
     gap: 10px;
     flex-wrap: wrap;
 }
-
 
 .team-pokemon img:hover {
     transform: scale(1.1);
@@ -152,27 +150,6 @@
     margin-top: 5px;
     align-self: center;
 }
-
-.type-leader {
-    background: linear-gradient(135deg, #ffd166 0%, #ffde8a 100%);
-    color: #8a6d3b;
-}
-
-.type-elite {
-    background: linear-gradient(135deg, #a78bfa 0%, #c4b5fd 100%);
-    color: #4c1d95;
-}
-
-.type-gym {
-    background: linear-gradient(135deg, #7dd3fc 0%, #bae6fd 100%);
-    color: #0c4a6e;
-}
-
-.type-novice {
-    background: linear-gradient(135deg, #86efac 0%, #bbf7d0 100%);
-    color: #166534;
-}
-
 
 .trainer-level {
     position: absolute;
