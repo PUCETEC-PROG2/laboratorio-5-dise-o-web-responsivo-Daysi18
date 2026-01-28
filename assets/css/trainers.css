@@ -3,8 +3,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 54px;
-    background-color: #fff5fa;
-    min-height: 100vh;
+    background-color: #fff5fa; 
 }
 
 
@@ -31,7 +30,7 @@
     min-width: 280px;
     border: 1px solid rgba(255, 200, 221, 0.4);
     transition: all 0.4s ease;
-    position: relative;
+    
 }
 
 
