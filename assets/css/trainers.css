@@ -1,0 +1,242 @@
+/* CSS para Entrenadores - Tono Rosa Pastel Suave */
+
+/* Contenedor principal (igual que en Pokémon) */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 54px;
+    background-color: #fff5fa;
+    min-height: 100vh;
+}
+
+/* Grid de entrenadores */
+.trainers-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Tarjeta de entrenador - Estilo rosa pastel */
+.trainer-card {
+    background: linear-gradient(145deg, #ffe9f9 0%, #fff0fb 100%);
+    border-radius: 24px;
+    box-shadow: 
+        0 6px 20px rgba(255, 182, 193, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex: calc(33.333% - 40px);
+    max-width: calc(33.333% - 40px);
+    min-width: 280px;
+    border: 1px solid rgba(255, 200, 221, 0.4);
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+/* Efecto hover */
+.trainer-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 
+        0 15px 30px rgba(255, 182, 193, 0.25),
+        0 5px 15px rgba(255, 182, 193, 0.15);
+    border-color: rgba(255, 182, 193, 0.6);
+}
+
+/* Imagen del entrenador */
+.trainer-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    background: linear-gradient(135deg, #ffceeb 0%, #f7e8f5 50%);
+    border-bottom: 2px solid rgba(255, 182, 193, 0.3);
+}
+
+/* Contenedor de información */
+.trainer-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-grow: 1;
+}
+
+/* Nombre del entrenador */
+.trainer-name {
+    font-size: 22px;
+    font-weight: 700;
+    color: #d81b60;
+    text-align: center;
+    margin: 0;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 2px rgba(216, 27, 96, 0.1);
+}
+
+/* Detalles del entrenador */
+.trainer-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.trainer-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 182, 193, 0.2);
+    transition: all 0.3s ease;
+}
+
+.trainer-detail:hover {
+    background: rgba(255, 255, 255, 0.8);
+    transform: translateX(5px);
+}
+
+.detail-label {
+    font-size: 14px;
+    color: #666;
+    font-weight: 500;
+}
+
+.detail-value {
+    font-size: 14px;
+    color: #ff6b93;
+    font-weight: 600;
+}
+
+/* Equipo Pokémon */
+.trainer-team {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 2px dashed rgba(255, 182, 193, 0.3);
+}
+
+.team-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #ff6b93;
+    margin-bottom: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.team-title::before {
+    content: '⭐';
+    font-size: 14px;
+}
+
+.team-pokemon {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.team-pokemon img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    filter: drop-shadow(0 3px 6px rgba(0,0,0,0.1));
+    transition: all 0.3s ease;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 182, 193, 0.2);
+}
+
+.team-pokemon img:hover {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.9);
+    border-color: #ffb6c1;
+}
+
+/* Tipos de entrenador */
+.trainer-type {
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.5px;
+    margin-top: 5px;
+    align-self: center;
+}
+
+.type-leader {
+    background: linear-gradient(135deg, #ffd166 0%, #ffde8a 100%);
+    color: #8a6d3b;
+}
+
+.type-elite {
+    background: linear-gradient(135deg, #a78bfa 0%, #c4b5fd 100%);
+    color: #4c1d95;
+}
+
+.type-gym {
+    background: linear-gradient(135deg, #7dd3fc 0%, #bae6fd 100%);
+    color: #0c4a6e;
+}
+
+.type-novice {
+    background: linear-gradient(135deg, #86efac 0%, #bbf7d0 100%);
+    color: #166534;
+}
+
+/* Nivel del entrenador */
+.trainer-level {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: linear-gradient(135deg, #ff6b93 0%, #ff8fab 100%);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(255, 107, 147, 0.3);
+    z-index: 2;
+}
+
+/* Responsive */
+@media screen and (max-width: 992px) {
+    .trainer-card {
+        flex: calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .trainers-grid {
+        gap: 15px;
+        padding: 15px;
+    }
+    
+    .trainer-card {
+        flex: calc(50% - 15px);
+        max-width: calc(50% - 15px);
+        min-width: 250px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .trainer-card {
+        flex: 100%;
+        max-width: 100%;
+        min-width: 280px;
+    }
+    
+    .container {
+        padding: 30px 20px;
+    }
+}
